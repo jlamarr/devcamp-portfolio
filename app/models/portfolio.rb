@@ -5,5 +5,9 @@ def self.angular
     where(subtitle: 'Angular')
 end
 
+def angular
+  @angular_portfolio_items = Portfolio.angular
+end
+
   scope :ruby_on_rails_portfolio_items, -> { where(subtitle: 'Ruby on Rails') }
 end

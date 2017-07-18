@@ -1,3 +1,11 @@
+  
+3.times do |topic|
+  Topic.create!(
+    title: "Topic #{topic}"
+    )
+end
+puts "3 topics created"
+
 10.times do |blog|
   Blog.create!(
     title: "My Blog Post #{blog}",
@@ -38,10 +46,3 @@ puts "9 portfolio items created"
     thumb_image: "http://placehold.it/350x200"
   )
 end
-  
-3.times do |topic|
-  Topic.create!(
-    title: "Topic #{topic}"
-    )
-end
-puts "3 topics created"
