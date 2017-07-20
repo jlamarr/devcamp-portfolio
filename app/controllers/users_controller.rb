@@ -71,4 +71,7 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit(:name, :slug)
     end
+    
+    def devise_for
+    end
 end
